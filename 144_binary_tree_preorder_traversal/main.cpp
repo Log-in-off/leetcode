@@ -85,7 +85,10 @@ int main()
     Solution a;
     std::vector<int> test1 = {1,INT32_MIN,2,3};
     std::vector<TreeNode> tree1 = makeTree(test1);
-    auto vec = a.preorderTraversal(&tree1.front());
-    std::cout << vec;
+    std::vector<int> answer1 = {1, 2, 3};
+    auto vec1 = a.preorderTraversal(&tree1.front());
+    std::cout << vec1;
+    assert(answer1 == vec1);
+    std::cout << "Test done" << std::endl;
     return 0;
 }
