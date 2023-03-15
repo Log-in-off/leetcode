@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(leetcode)
+
+add_subdirectory(128_longest_consecutive_sequence)
+add_subdirectory(144_binary_tree_preorder_traversal)
+add_subdirectory(958_check_completeness_of_a_binary_tree)

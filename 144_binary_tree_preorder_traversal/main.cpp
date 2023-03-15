@@ -9,6 +9,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
 struct TreeNode {
     int val;
     TreeNode *left;
@@ -22,41 +23,22 @@ struct TreeNode {
 #include <iostream>
 class Solution {
 public:
-    bool isCompleteTree(TreeNode* root) {
-        std::vector<TreeNode*> buff;
-        buff.push_back(root);
-        putNodes(buff);
-        bool answer = true;
-        bool isLastValueFalse = false;
-        for(auto node: buff)
-        {
-            if (node == nullptr)
-            {
-                isLastValueFalse = true;
-            }
-            else if (isLastValueFalse)
-            {
-                answer = false;
-                break;
-            }
-        }
+    std::vector<int> preorderTraversal(TreeNode* root) {
+        std::vector<int> answer;
+        deep(root, answer);
         return answer;        
     }
-    void putNodes(std::vector<TreeNode*>& buff)
+    void deep(TreeNode* root, std::vector<int>& answer)
     {
-        uint32_t index = 0;
-        while(index < buff.size())
+        if(root)
         {
-            auto root = buff[index];
-            if (nullptr != root)
-            {
-                buff.push_back(root->left);
-                buff.push_back(root->right);
-            }
-            index++;
-        }        
+            answer.push_back(root->val);
+            deep(root->left, answer);
+            deep(root->right, answer);
+        }
     }
 };
+
 
 std::vector<TreeNode> makeTree(std::vector<int> &nodes)
 {
@@ -83,18 +65,27 @@ std::vector<TreeNode> makeTree(std::vector<int> &nodes)
     return tree;
 }
 
+std::ostream& operator<< (std::ostream &out, std::vector<int> &vec)
+{
+    bool first = true;
+    for (auto value:vec)
+    {
+        if(!first)
+            out << " ";
+        first = false;
+        out << value;
+    }
+    out << std::endl;
+    return out;
+}
+
 #include <cassert>
 int main()
 {
     Solution a;
-    std::vector<int> test1 = {1,2,3,4,5,6};
+    std::vector<int> test1 = {1,INT32_MIN,2,3};
     std::vector<TreeNode> tree1 = makeTree(test1);
-    assert(true == a.isCompleteTree(&tree1.front()));
-
-    /* I use INT32_MIN for a case like this [1,2,3,4,5,null,7] */
-    std::vector<int> test2 = {1,2,3,4,5,INT32_MIN,7};
-    std::vector<TreeNode> tree2 = makeTree(test2);
-    assert(false == a.isCompleteTree(&tree2.front()));
-    std::cout << "Test done" << std::endl;
+    auto vec = a.preorderTraversal(&tree1.front());
+    std::cout << vec;
     return 0;
 }
