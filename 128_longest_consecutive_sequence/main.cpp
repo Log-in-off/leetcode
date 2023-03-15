@@ -2,7 +2,6 @@
 #include <set>
 #include <iostream>
 
-
 namespace{
 
 using namespace std;
@@ -35,14 +34,16 @@ public:
 };
 }
 
+#include <cassert>
 int main()
 {
     Solution a;
     vector<int> test1 = {100,4,200,1,3,2};
-    cout << a.longestConsecutive(test1) << std::endl;
+    assert(4 == a.longestConsecutive(test1));
 
     vector<int> test2 = {0,3,7,2,5,8,4,6,0,1};
-    cout << a.longestConsecutive(test2) << std::endl;
+    assert(9 == a.longestConsecutive(test2));
+    std::cout << "Test done" << std::endl;
     return 0;
 }
 
