@@ -1,15 +1,4 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-
+/*Definition for a binary tree node.*/
 struct TreeNode {
     int val;
     TreeNode *left;
@@ -21,6 +10,7 @@ struct TreeNode {
 
 #include <vector>
 #include <iostream>
+#include <stack>
 class Solution {
 public:
     std::vector<int> preorderTraversal(TreeNode* root) {
@@ -36,6 +26,24 @@ public:
             deep(root->left, answer);
             deep(root->right, answer);
         }
+    }
+
+    std::vector<int> preorderTraversalIter(TreeNode* root) {
+        std::vector<int> answer;
+        std::stack<TreeNode*> stack;
+        stack.push(root);
+        while(!stack.empty())
+        {
+            auto top = stack.top();
+            stack.pop();
+            if(top)
+            {
+                answer.push_back(top->val);
+                stack.push(top->right);
+                stack.push(top->left);            
+            }
+        }
+        return answer;
     }
 };
 
@@ -89,6 +97,11 @@ int main()
     auto vec1 = a.preorderTraversal(&tree1.front());
     std::cout << vec1;
     assert(answer1 == vec1);
+
+    auto vec1It = a.preorderTraversalIter(&tree1.front());
+    std::cout << vec1It;
+    assert(answer1 == vec1It);
+    
     std::cout << "Test done" << std::endl;
     return 0;
 }
