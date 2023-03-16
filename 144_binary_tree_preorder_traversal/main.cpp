@@ -30,18 +30,22 @@ public:
 
     std::vector<int> preorderTraversalIter(TreeNode* root) {
         std::vector<int> answer;
+        if (!root)
+            return answer;
+
         std::stack<TreeNode*> stack;
         stack.push(root);
         while(!stack.empty())
         {
             auto top = stack.top();
             stack.pop();
-            if(top)
-            {
-                answer.push_back(top->val);
+            answer.push_back(top->val);
+            if (top->right)
                 stack.push(top->right);
+
+            if (top->left)
                 stack.push(top->left);            
-            }
+            
         }
         return answer;
     }
