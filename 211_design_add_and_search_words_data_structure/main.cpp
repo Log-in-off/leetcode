@@ -3,12 +3,11 @@
 class Node {
     public:
     Node(){
-        end_ =false;
         for(int i = 0; i < 26; i++)
             ch_[i] = nullptr;
     };
     Node* ch_[26];
-    bool end_;
+    bool end_ = false;
 };
 
 class WordDictionary {
@@ -30,30 +29,28 @@ public:
     }
     
     bool search(std::string word) {
-        return search(word, root_, 0);
+        return search(word, 0, root_);
 
     }
-    bool search(std::string word, Node* node, int ind)
-    {
-        if (!node)
-            return false;
 
-        if (ind == word.size())
-            return node->end_;
+    bool search(std::string &word, int index, Node* node)
+    {
+        if (index == word.size())
+            return node->end_;        
         
-        
-        if (word[ind] != '.')
-            return search(word, node->ch_[word[ind]-'a'], ind + 1);
+        if (word[index] != '.')
+        {
+            Node *tmp = node->ch_[word[index]-'a'];
+            return tmp && search(word, index + 1, tmp);
+        }
 
         for(int k = 0; k < 26; k++)
         {
-            if ( search(word, node->ch_[k], ind+1))
+            if ( node->ch_[k] && search(word, index+1, node->ch_[k]))
                 return true;    
-        }
-      
+        }      
         return false;
     }
-
 };
 
 #include <cassert>
@@ -73,7 +70,6 @@ int main() {
     {
         WordDictionary* wordDictionary = new WordDictionary();
         wordDictionary->addWord("a");
-
         assert( true == wordDictionary->search("."));
         delete wordDictionary;
     }
