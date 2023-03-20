@@ -64,14 +64,12 @@ int main() {
         assert( true == wordDictionary->search("bad"));
         assert( true == wordDictionary->search(".ad"));
         assert( true == wordDictionary->search("b.."));
-        delete wordDictionary;
     }
 
     {
         WordDictionary* wordDictionary = new WordDictionary();
         wordDictionary->addWord("a");
         assert( true == wordDictionary->search("."));
-        delete wordDictionary;
     }
 
     std::cout << "Test done" << std::endl;
