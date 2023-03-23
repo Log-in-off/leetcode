@@ -11,6 +11,7 @@ add_subdirectory(211_design_add_and_search_words_data_structure)
 add_subdirectory(605_can_place_flowers)
 add_subdirectory(2348_number_of_zero-fille_subarrays)
 add_subdirectory(2492_minimum_score_of_a_path_between_two_cities)
+add_subdirectory(1319_number_of_operations_to_make_network_connected)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
