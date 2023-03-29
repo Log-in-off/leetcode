@@ -17,6 +17,7 @@ add_subdirectory(2316_count_unreachable_pairs_of_nodes_in_an_undirected_graph)
 add_subdirectory(2360_longest_cycle_in_a_graph)
 add_subdirectory(64_minimum_path_sum)
 add_subdirectory(983_minimum_cost_for_tickets)
+add_subdirectory(1402_reducing_dishes)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
