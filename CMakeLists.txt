@@ -20,6 +20,7 @@ add_subdirectory(983_minimum_cost_for_tickets)
 add_subdirectory(1402_reducing_dishes)
 add_subdirectory(141_linked_list_cycle)
 add_subdirectory(87_scramble_string)
+add_subdirectory(142_linked_list_cycle_II)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
