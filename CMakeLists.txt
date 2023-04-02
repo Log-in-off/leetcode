@@ -22,6 +22,7 @@ add_subdirectory(141_linked_list_cycle)
 add_subdirectory(87_scramble_string)
 add_subdirectory(142_linked_list_cycle_II)
 add_subdirectory(704_binary_search)
+add_subdirectory(2300_successful_pairs_of_spells_and_potions)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
