@@ -24,6 +24,8 @@ add_subdirectory(142_linked_list_cycle_II)
 add_subdirectory(704_binary_search)
 add_subdirectory(2300_successful_pairs_of_spells_and_potions)
 add_subdirectory(881_boats_to_save_people)
+add_subdirectory(2405_optimal_partition_of_string)
+add_subdirectory(217_contains_duplicate)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
