@@ -28,6 +28,8 @@ add_subdirectory(2405_optimal_partition_of_string)
 add_subdirectory(217_contains_duplicate)
 add_subdirectory(2439_minimize_maximum_of_array)
 add_subdirectory(242_valid_anagram)
+add_subdirectory(1254_number_of_closed_islands)
+add_subdirectory(1_two_sum)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
