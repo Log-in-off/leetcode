@@ -32,6 +32,7 @@ add_subdirectory(1254_number_of_closed_islands)
 add_subdirectory(1_two_sum)
 add_subdirectory(1020_number_of_enclaves)
 add_subdirectory(49_group_anagrams)
+add_subdirectory(133_clone_graph)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
