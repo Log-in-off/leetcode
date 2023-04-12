@@ -38,6 +38,8 @@ add_subdirectory(20_valid_parentheses)
 add_subdirectory(347_top_k_frequent_elements)
 add_subdirectory(2390_removing_stars_from_a_string)
 add_subdirectory(238_product_of_array_except_self)
+add_subdirectory(71_simplify_path)
+add_subdirectory(36_valid_sudoku)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
