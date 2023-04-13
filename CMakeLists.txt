@@ -40,6 +40,8 @@ add_subdirectory(2390_removing_stars_from_a_string)
 add_subdirectory(238_product_of_array_except_self)
 add_subdirectory(71_simplify_path)
 add_subdirectory(36_valid_sudoku)
+add_subdirectory(946_validate_stack_sequences)
+add_subdirectory(155_min_stack)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
