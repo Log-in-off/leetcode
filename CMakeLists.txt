@@ -42,6 +42,7 @@ add_subdirectory(71_simplify_path)
 add_subdirectory(36_valid_sudoku)
 add_subdirectory(946_validate_stack_sequences)
 add_subdirectory(155_min_stack)
+add_subdirectory(516_longest_palindromic_subsequence)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
