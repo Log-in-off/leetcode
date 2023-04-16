@@ -44,7 +44,8 @@ add_subdirectory(946_validate_stack_sequences)
 add_subdirectory(155_min_stack)
 add_subdirectory(516_longest_palindromic_subsequence)
 add_subdirectory(344_reverse_string)
-add_subdirectory(2218_maximum_value_of_k_coins_from)
+add_subdirectory(2218_maximum_value_of_k_coins_from)#i have a problems with this task
+add_subdirectory(1639_number_of_ways_to_form_a_target_string_given_a_dictionary)#i have a problems with this task
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
