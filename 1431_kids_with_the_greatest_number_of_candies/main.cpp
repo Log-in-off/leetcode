@@ -3,6 +3,9 @@
 #include <vector>
 #include <algorithm>
 
+/*
+https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
+*/
 class Solution {
 public:
     std::vector<bool> kidsWithCandies(std::vector<int>& candies, int extraCandies) {
