@@ -48,6 +48,8 @@ add_subdirectory(2218_maximum_value_of_k_coins_from)#i have a problems with this
 add_subdirectory(1639_number_of_ways_to_form_a_target_string_given_a_dictionary)#i have a problems with this task
 add_subdirectory(1431_kids_with_the_greatest_number_of_candies)
 add_subdirectory(78_subsets)
+add_subdirectory(1768_merge_strings_alternately)
+add_subdirectory(39_combination_sum)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
