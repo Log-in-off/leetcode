@@ -50,6 +50,8 @@ add_subdirectory(1431_kids_with_the_greatest_number_of_candies)
 add_subdirectory(78_subsets)
 add_subdirectory(1768_merge_strings_alternately)
 add_subdirectory(39_combination_sum)
+add_subdirectory(1372_longest_zigzag_path_in_a_binary_tree)
+add_subdirectory(46_permutations)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
