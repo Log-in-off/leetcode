@@ -53,6 +53,7 @@ add_subdirectory(39_combination_sum)
 add_subdirectory(1372_longest_zigzag_path_in_a_binary_tree)
 add_subdirectory(46_permutations)
 add_subdirectory(662_maximum_width_of_binary_tree)#add tests
+add_subdirectory(879_profitable_schemes)#i have a problems with this task
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
