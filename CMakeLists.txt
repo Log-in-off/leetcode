@@ -56,6 +56,7 @@ add_subdirectory(662_maximum_width_of_binary_tree)#add tests
 add_subdirectory(879_profitable_schemes)#i have a problems with this task
 add_subdirectory(1046_last_stone_weight)
 add_subdirectory(2336_smallest_number_in_infinite_set)
+add_subdirectory(258_add_digits)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
