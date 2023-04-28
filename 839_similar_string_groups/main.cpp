@@ -2,13 +2,14 @@
 #include <cassert>
 #include <vector>
 #include <list>
+#include <string_view>
 
 /*
 https://leetcode.com/problems/similar-string-groups/description/
 */
 
 class Solution {
-    int countDiff(const std::string &word, const std::string &str)
+    int countDiff(const std::string_view &word, const std::string &str)
     {
         int diff = 0;
         for(int k = 0; k < word.size(); k++)
@@ -24,29 +25,20 @@ class Solution {
     }
 public:
     int numSimilarGroups(std::vector<std::string>& strs) {
-        std::list<std::vector<std::string>> groups;
+        std::list<std::vector<std::string_view>> groups;
         for (int i = 0; i < strs.size(); i++)
         {
             bool add = false;
-            std::vector<std::list<std::vector<std::string>>::iterator> del;
-            std::list<std::vector<std::string>>::iterator target;
+            std::vector<std::list<std::vector<std::string_view>>::iterator> del;
+            std::list<std::vector<std::string_view>>::iterator target;
             for(auto group = groups.begin(); group != groups.end(); group++)
             {
                 for(const auto& word: *group)
                 {
                     int diff = countDiff(word, strs[i]);
-                    //for(int k = 0; k < word.size(); k++)
-                    //{
-                    //    if (word[k] != strs[i][k])
-                    //    {
-                    //        diff++;
-                    //        if (diff > 2)
-                    //            break;
-                    //    }
-                    //}
-                    if (diff == 2)
+                    if (2 == diff)
                     {
-                        if (add == true)
+                        if (true == add)
                         {
                             for(auto val: *group)
                             {
@@ -73,12 +65,10 @@ public:
             {
                 groups.push_back({strs[i]});
             }
-
             for (auto val:del)
             {
                 groups.erase(val);
-            }
-            
+            }            
         }
         return groups.size();        
     }
