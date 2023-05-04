@@ -61,6 +61,7 @@ add_subdirectory(839_similar_string_groups)
 add_subdirectory(150_evaluate_reverse_polish_notation)
 add_subdirectory(22_generate_parentheses)
 add_subdirectory(739_daily_temperatures)
+add_subdirectory(853_car_fleet)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
