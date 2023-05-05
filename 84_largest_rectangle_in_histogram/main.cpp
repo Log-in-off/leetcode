@@ -3,6 +3,7 @@
 #include <vector>
 #include <stack>
 #include <map>
+#include <algorithm>
 
 /*
 https://leetcode.com/problems/largest-rectangle-in-histogram/description/
@@ -16,38 +17,30 @@ public:
         std::stack<std::pair<int, int>> st;
         for(int i = 0; i < n; i++)
         {
-        	if(st.empty())
-        	{
-        		
-        		st.push({i, heights[i]});
-        	}
-        	else
-        	{
-        		if (st.top().second < heights[i])
-        		{
-        			st.push({i, heights[i]});
-        		}
-        		else if (st.top().second > heights[i])
-        		{
-        			std::pair<int, int> tmp;
-        			while(!st.empty() && st.top().second > heights[i])
-        			{
-        				int area = st.top().second* (i-st.top().first);
-        				if (area > max)
-        					max = area;
-        				tmp = st.top();
-        				st.pop();
-        			}
-        			st.push({tmp.first, heights[i]});
-        		}
-        	}
+            if (st.empty() || (!st.empty() &&st.top().second < heights[i]))
+            {
+                st.push({i, heights[i]});
+            }
+            else if (st.top().second > heights[i])
+            {
+                std::pair<int, int> tmp;
+                while(!st.empty() && st.top().second > heights[i])
+                {
+                    int area = st.top().second* (i-st.top().first);
+                    if (area > max)
+                        max = area;
+                    tmp = st.top();
+                    st.pop();
+                }
+                st.push({tmp.first, heights[i]});
+            }
         }
         while(!st.empty())
         {
         	int area = st.top().second* (n-st.top().first);
-		      if (area > max)
-			      max = area;
-					st.pop();
+		    if (area > max)
+			    max = area;
+			st.pop();
         }
         return max;
     }
