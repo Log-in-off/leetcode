@@ -64,6 +64,7 @@ add_subdirectory(739_daily_temperatures)
 add_subdirectory(853_car_fleet)
 add_subdirectory(84_largest_rectangle_in_histogram)
 add_subdirectory(125_valid_palindrome)
+add_subdirectory(167_two_sum_II_input_array_Is_sorted)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
