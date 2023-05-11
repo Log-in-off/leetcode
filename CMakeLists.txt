@@ -68,6 +68,7 @@ add_subdirectory(167_two_sum_II_input_array_Is_sorted)
 add_subdirectory(15_3Sum)
 add_subdirectory(11_container_with_most_water)
 add_subdirectory(206_reverse_linked_list)
+add_subdirectory(21_merge_two_sorted_lists)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
