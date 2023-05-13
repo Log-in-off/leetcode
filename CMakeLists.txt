@@ -70,6 +70,7 @@ add_subdirectory(11_container_with_most_water)
 add_subdirectory(206_reverse_linked_list)
 add_subdirectory(21_merge_two_sorted_lists)
 add_subdirectory(143_reorder_list)
+add_subdirectory(19_remove_nth_node_from_end_of_list)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
