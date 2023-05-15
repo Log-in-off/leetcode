@@ -72,6 +72,7 @@ add_subdirectory(21_merge_two_sorted_lists)
 add_subdirectory(143_reorder_list)
 add_subdirectory(19_remove_nth_node_from_end_of_list)
 add_subdirectory(138_copy_list_with_random_pointer)
+add_subdirectory(2_add_two_numbers)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)

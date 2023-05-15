@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.10)
+project(2_)
+
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-omit-frame-pointer -fsanitize=address")
+set (CMAKE_LINKER_FLAGS "${CMAKE_LINKER_FLAGS} -fno-omit-frame-pointer -fsanitize=address")
+
+add_executable(2.out main.cpp)
+target_compile_features(2.out PRIVATE cxx_std_17)
