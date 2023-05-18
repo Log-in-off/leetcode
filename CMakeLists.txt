@@ -75,6 +75,7 @@ add_subdirectory(138_copy_list_with_random_pointer)
 add_subdirectory(2_add_two_numbers)
 add_subdirectory(287_find_the_duplicate_number)#there are many intersting solutions on leetcode
 add_subdirectory(146_LRU_cache)
+add_subdirectory(977_squares_of_a_sorted_array)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
