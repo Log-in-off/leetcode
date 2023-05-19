@@ -13,7 +13,6 @@ public:
 			{
 				answer[i] = nums[lh]*nums[lh];
 				lh++;
-
 			}
 			else
 			{
