@@ -77,6 +77,7 @@ add_subdirectory(287_find_the_duplicate_number)#there are many intersting soluti
 add_subdirectory(146_LRU_cache)
 add_subdirectory(977_squares_of_a_sorted_array)
 add_subdirectory(23_merge_k_sorted_lists)
+add_subdirectory(25_reverse_nodes_in_k_group)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
