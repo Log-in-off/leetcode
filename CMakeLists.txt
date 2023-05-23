@@ -80,6 +80,7 @@ add_subdirectory(23_merge_k_sorted_lists)
 add_subdirectory(25_reverse_nodes_in_k_group)
 add_subdirectory(121_best_time_to_buy_and_sell_stock)
 add_subdirectory(3_longest_substring_without_repeating_characters)
+add_subdirectory(424_longest_repeating_character_replacement) #i should repeat
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
