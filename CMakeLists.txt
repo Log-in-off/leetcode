@@ -83,6 +83,7 @@ add_subdirectory(3_longest_substring_without_repeating_characters)
 add_subdirectory(424_longest_repeating_character_replacement) #i should repeat. + use unordered_map
 add_subdirectory(567_permutation_in_string) #too as up
 add_subdirectory(74_search_a_2d_matrix)
+add_subdirectory(875_koko_eating_bananas)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
