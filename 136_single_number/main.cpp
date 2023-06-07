@@ -2,6 +2,10 @@
 #include <cassert>
 #include <vector>
 
+/*
+https://leetcode.com/problems/single-number/description/
+*/
+
 class Solution {
 public:
     int singleNumber(std::vector<int>& nums) {
@@ -9,8 +13,7 @@ public:
         for(auto var: nums)
             answer ^= var;
         return answer;
-    }
-    
+    }    
 };
 
 int main() 

@@ -89,6 +89,7 @@ add_subdirectory(33_search_in_rotated_sorted_array)
 add_subdirectory(981_time_based_key_value_store)
 add_subdirectory(76_minimum_window_substring) #too as up
 add_subdirectory(136_single_number)
+add_subdirectory(239_sliding_window_maximum)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
