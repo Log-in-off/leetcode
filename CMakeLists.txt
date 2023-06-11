@@ -93,6 +93,7 @@ add_subdirectory(239_sliding_window_maximum)
 add_subdirectory(226_invert_binary_tree)
 add_subdirectory(104_maximum_depth_of_binary_tree)
 add_subdirectory(543_diameter_of_binary_tree)
+add_subdirectory(110_balanced_binary_tree)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
