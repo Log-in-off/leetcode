@@ -96,6 +96,7 @@ add_subdirectory(543_diameter_of_binary_tree)
 add_subdirectory(110_balanced_binary_tree)
 add_subdirectory(100_same_tree)
 add_subdirectory(572_subtree_of_another_tree)
+add_subdirectory(235_lowest_common_ancestor_of_a_binary_search_tree)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
