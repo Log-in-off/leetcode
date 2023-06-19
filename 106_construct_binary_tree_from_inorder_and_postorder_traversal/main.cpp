@@ -17,6 +17,16 @@ struct TreeNode {
 
 class Solution {
 public:
+    void deleteTree(TreeNode* root)
+    {
+        if (root)
+        {
+            deleteTree(root->left);
+            deleteTree(root->right);
+            delete root;
+        }
+    }
+
     std::vector<int> inOrderTraversalIter(TreeNode* root)
     {
         std::vector<int> answer;
@@ -120,6 +130,7 @@ int main() {
     auto answerIter = a.inOrderTraversalIter(tree);
     assert(inOrder == answer);
     assert(inOrder == answerIter);
+    a.deleteTree(tree);
     std::cout << "Test done" << std::endl;
     return 0;
 }

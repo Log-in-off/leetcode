@@ -102,6 +102,7 @@ add_subdirectory(199_binary_tree_right_side_view)
 add_subdirectory(1448_count_good_nodes_in_binary_tree)
 add_subdirectory(98_validate_binary_search_tree)
 add_subdirectory(230_kth_smallest_element_in_a_BST)
+add_subdirectory(105_construct_binary_tree_from_preorder_and_inorder_traversal)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
