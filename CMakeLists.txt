@@ -106,6 +106,7 @@ add_subdirectory(105_construct_binary_tree_from_preorder_and_inorder_traversal)
 add_subdirectory(124_binary_tree_maximum_path_sum)
 add_subdirectory(297_serialize_and_deserialize_binary_tree)
 add_subdirectory(703_kth_largest_element_in_a_stream)
+add_subdirectory(90_subsets_II)
 
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
