@@ -112,3 +112,8 @@ add_subdirectory(257_binary_tree_paths)
 add_subdirectory(array_challenge)
 add_subdirectory(searching_challenge)
 add_subdirectory(string_challenge)
+
+add_subdirectory(unexpected_task1)
+add_subdirectory(unexpected_task2)
+add_subdirectory(unexpected_task3)
+add_subdirectory(unexpected_task4)
